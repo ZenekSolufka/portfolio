@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <div class="blob1"></div>
+    <div class="blob2"></div>
+
+    <nav>
+      <div class="nav-logo">// <span>kacper.chełstowski</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button
+        class="nav-cta"
+        onclick="
+          document
+            .getElementById('contact')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        Write to me
+      </button>
+    </nav>
+
+    <main>
+      <div class="hero" id="about">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Available for work</span>
+          </div>
+
+          <h1 class="hero-name">Kacper<br />Chełstowski.</h1>
+
+          <p class="hero-title">// Front-end Developer</p>
+
+          <p class="hero-bio">
+            I'm passionate about technology and programming. I'm a computer
+            science engineer and looking for my next job as a front-end
+            developer. I am a dedicated developer specializing in JavaScript,
+            with a particular focus on React. As a developer, I actively develop
+            my skills.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-secondary">Get in Touch</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">30+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1+</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">8+</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-avatar">
+          <div class="avatar-frame">
+            <img
+              class="project-img"
+              src="./assets/profile.jpg"
+              alt="kacper chełstowski"
+            />
+            <div class="avatar-corner tl"></div>
+            <div class="avatar-corner br"></div>
+          </div>
+        </div>
+      </div>
+
+      <section id="skills">
+        <div class="section-label">Technological Stack</div>
+        <div class="section-divider"></div>
+        <h2 class="section-title">What I Build With</h2>
+        <p class="section-desc">Technologies I work with on a daily basis.</p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon devicon-react-original colored"></div>
+            <div class="skill-name">React</div>
+            <div class="skill-level">Frontend / Advanced</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon devicon-typescript-original colored"></div>
+            <div class="skill-name">TypeScript</div>
+            <div class="skill-level">Language / Advanced</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon devicon-javascript-plain colored"></div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-level">Language / Advanced</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon devicon-electron-original colored"></div>
+            <div class="skill-name">Electron</div>
+            <div class="skill-level">Desktop / Basic</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon devicon-docker-plain-wordmark colored"></div>
+            <div class="skill-name">Docker</div>
+            <div class="skill-level">DevOps / Basic</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 55%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div
+              class="skill-icon devicon-amazonwebservices-plain-wordmark colored"
+            ></div>
+            <div class="skill-name">AWS / Cloud</div>
+            <div class="skill-level">Infrastructure / Basic</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon devicon-git-plain colored"></div>
+            <div class="skill-name">GIT</div>
+            <div class="skill-level">Infrastructure / Basic</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon devicon-supabase-plain colored"></div>
+            <div class="skill-name">Supabase</div>
+            <div class="skill-level">Backend / Basic</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-label">My Work</div>
+        <div class="section-divider"></div>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-desc">Projects I'm most proud of.</p>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div
+              class="project-thumb"
+              style="background: #0d0d14; position: relative; overflow: hidden"
+            >
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  background-image:
+                    linear-gradient(
+                      rgba(167, 139, 250, 0.07) 1px,
+                      transparent 1px
+                    ),
+                    linear-gradient(
+                      90deg,
+                      rgba(167, 139, 250, 0.07) 1px,
+                      transparent 1px
+                    );
+                  background-size: 28px 28px;
+                "
+              ></div>
+
+              <div
+                style="
+                  position: absolute;
+                  width: 160px;
+                  height: 160px;
+                  border-radius: 50%;
+                  background: rgba(167, 139, 250, 0.12);
+                  top: -40px;
+                  right: -40px;
+                "
+              ></div>
+              <div
+                style="
+                  position: absolute;
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 50%;
+                  background: rgba(96, 217, 200, 0.1);
+                  bottom: -20px;
+                  left: 20px;
+                "
+              ></div>
+
+              <div
+                style="
+                  position: absolute;
+                  top: 12px;
+                  right: 12px;
+                  background: rgba(167, 139, 250, 0.15);
+                  border: 1px solid rgba(167, 139, 250, 0.25);
+                  color: rgba(167, 139, 250, 0.9);
+                  font-size: 10px;
+                  font-family: var(--font-mono);
+                  padding: 3px 8px;
+                  border-radius: 4px;
+                  letter-spacing: 0.08em;
+                "
+              >
+                NDA
+              </div>
+
+              <div style="position: relative; z-index: 2; text-align: center">
+                <div
+                  style="
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    margin-bottom: 14px;
+                  "
+                >
+                  <div
+                    style="
+                      width: 36px;
+                      height: 36px;
+                      border-radius: 8px;
+                      background: rgba(255, 255, 255, 0.07);
+                      border: 1px solid rgba(255, 255, 255, 0.1);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-size: 16px;
+                    "
+                    class="devicon-react-original colored"
+                  ></div>
+                  <div
+                    style="
+                      width: 36px;
+                      height: 36px;
+                      border-radius: 8px;
+                      background: rgba(255, 255, 255, 0.07);
+                      border: 1px solid rgba(255, 255, 255, 0.1);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-size: 16px;
+                    "
+                    class="devicon-supabase-plain colored"
+                  ></div>
+                  <div
+                    style="
+                      width: 36px;
+                      height: 36px;
+                      border-radius: 8px;
+                      background: rgba(255, 255, 255, 0.07);
+                      border: 1px solid rgba(255, 255, 255, 0.1);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-size: 16px;
+                    "
+                    class="devicon-electron-original colored"
+                  ></div>
+                </div>
+                <div
+                  style="
+                    font-size: 11px;
+                    font-family: var(--font-mono);
+                    color: rgba(167, 139, 250, 0.7);
+                    letter-spacing: 0.12em;
+                    text-transform: uppercase;
+                  "
+                >
+                  Confidential project
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag blue">React</span>
+                <span class="tag green">Supabase</span>
+                <span class="tag pink">Electron</span>
+                <span class="tag orange">Google OAuth 2.0</span>
+              </div>
+
+              <h3 class="project-title">
+                Performance & Multitasking Management System
+              </h3>
+
+              <p class="project-desc">
+                Desktop application for managing performance and multitasking
+                workflows. Built with Electron and React, with real-time data
+                sync via Supabase.
+              </p>
+
+              <div class="project-links">
+                <a
+                  href="https://twoje-demo.pl"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span>↗</span> Under NDA — details on request
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">
+              <img class="project-img" src="./assets/ai-assistant.jpg" alt="" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag teal">Tailwind</span>
+                <span class="tag pink">Google Calendar API</span>
+                <span class="tag blue">Google OAuth 2.0</span>
+                <span class="tag yellow">AWS Lambda (node.js)</span>
+                <span class="tag green">Google Gemini</span>
+                <span class="tag orange">API Gateway (REST)</span>
+                <span class="tag red">AWS Console, GIT, Postman</span>
+              </div>
+              <h3 class="project-title">AI Productivity Assistant</h3>
+              <p class="project-desc">
+                AI-powered productivity dashboard integrating Google Calendar,
+                Gemini, and a custom scoring algorithm to analyze and visualize
+                your daily workload.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">
+              <img class="project-img" src="./assets/aivids.png" alt="" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">ReactNative</span>
+                <span class="tag teal">Nativewind</span>
+                <span class="tag pink">Expo</span>
+                <span class="tag blue">Animatable</span>
+                <span class="tag yellow">Appwrite</span>
+              </div>
+              <h3 class="project-title">Video Sharing App</h3>
+              <p class="project-desc">
+                Built with React Native for seamless user experiences,
+                Animatable for captivating animations, and integrated with the
+                dependable backend systems of Appwrite, this app showcases
+                impressive design and functionality, enabling seamless sharing
+                of AI videos within the community.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link"><span>⬡</span> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">
+              <img class="project-img" src="./assets/taskflow.jpg" alt="" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag teal">Tailwind</span>
+                <span class="tag pink">Google Calendar API</span>
+                <span class="tag blue">Google OAuth 2.0</span>
+                <span class="tag yellow">Supabase</span>
+              </div>
+              <h3 class="project-title">TaskFlow - Task Management App</h3>
+              <p class="project-desc">
+                TaskFlow is a modern task management application that combines
+                the functionality of task lists with Google Calendar
+                integration. The application allows users to effectively
+                organize their work, track progress, and visualize data in real
+                time.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link"><span>⬡</span> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="contact-section" id="contact">
+        <div class="contact-inner">
+          <div class="contact-left">
+            <div class="section-label">Contact</div>
+            <div class="section-divider"></div>
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-desc" style="margin-bottom: 0">
+              Have a project to discuss? Looking for a developer for your team?
+              Write to me - I respond quickly.
+            </p>
+          </div>
+          <div class="contact-right">
+            <div class="contact-card">
+              <a href="mailto:twoj@email.com" class="contact-item">
+                <div class="contact-item-icon">✉</div>
+                <div class="contact-item-info">
+                  <div class="contact-item-label">Email</div>
+                  <div class="contact-item-value">zenekch22@wp.pl</div>
+                </div>
+              </a>
+              <a
+                href="https://github.com/ZenekSolufka"
+                class="contact-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="contact-item-icon">⬡</div>
+                <div class="contact-item-info">
+                  <div class="contact-item-label">GitHub</div>
+                  <div class="contact-item-value">github.com/ZenekSolufka</div>
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kacper-chelstowski-967a4b292/"
+                class="contact-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="contact-item-icon">in</div>
+                <div class="contact-item-info">
+                  <div class="contact-item-label">LinkedIn</div>
+                  <div class="contact-item-value">
+                    linkedin.com/in/kacper-chelstowski-967a4b292/
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Kacper Chelstowski — built with passion and coffee ☕</p>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.style.opacity = "1";
+              e.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document
+        .querySelectorAll(".skill-card, .project-card")
+        .forEach((el, i) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(24px)";
+          el.style.transition = `opacity 0.5s ${i * 0.06}s ease, transform 0.5s ${i * 0.06}s ease`;
+          observer.observe(el);
+        });
+    </script>
+  </body>
+</html>
